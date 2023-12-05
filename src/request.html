@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="author" content="Your Name" />
+    <title>Trip Hop Radio</title>
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Request New Artist</h1>
+    </header>
+    <main>
+      <form id="new-artist-form" action="https://httpbin.org/post" method="POST">
+        <label for="artist-name">Artist's Name:</label>
+        <input type="text" id="artist-name" name="artist_name" required />
+
+        <label for="music-genre">Music Genre:</label>
+        <input list="genres" id="music-genre" name="music_genre" required />
+        <datalist id="genres">
+          <option value="Rock"></option>
+          <option value="Pop"></option>
+          <option value="Rap"></option>
+          <option value="Trip Hop"></option>
+          <option value="Hip Hop"></option>
+          <option value="Shoegaze"></option>
+          <option value="Rnb"></option>
+          <option value="Dubstep"></option>
+          <option value="Classical"></option>
+          <option value="Indie"></option>
+        </datalist>
+
+        <label for="social-media-urls">Social Media URLs:</label>
+        <input type="url" id="social-media-urls" name="social_media_urls" required />
+
+        <label for="song-video-urls">Song URLs:</label>
+        <!-- I made this a container so that the page dynamically loads more input boxes -->
+        <div id="video-urls-container">
+          <input type="url" name="song_video_urls" required />
+        </div>
+        <button type="button" id="add-video-url">Add More</button>
+
+        <label>
+          <input type="checkbox" name="explicit_lyrics" />
+          Explicit Lyrics?
+        </label>
+        <br />
+        <label for="artist-description">Description:</label>
+        <textarea id="artist-description" name="artist_description"></textarea>
+
+        <button type="submit">Request Artist</button>
+        <a href="index.html" class="button back-to-home-button">Back to Home</a>
+      </form>
+    </main>
+    <script src="./js/request.js"></script>
+  </body>
+  <footer>
+    <!-- This is where the newsletter part is built -->
+    <form id="newsletter-form" action="https://httpbin.org/post" method="POST">
+      <label for="email"><b>Subscribe to our weekly newsletter:</b></label>
+      <input type="email" id="email" name="email" required placeholder="Enter a valid email" />
+      <button type="submit">Join</button>
+    </form>
+  </footer>
+</html>
