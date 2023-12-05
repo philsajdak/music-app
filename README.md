@@ -1,2 +1,2 @@
 # music-app
-Music app created using Javascript
+Music app created using Javascript and Water.css
