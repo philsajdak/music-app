@@ -142,7 +142,7 @@ window.songs = [
     url: "https://www.youtube.com/watch?v=DpUrH1mCAqQ",
     explicit: false,
     imageUrl:
-      "https://lastfm.freetls.fastly.net/i/u/770x0/513525709958517ab0040cccea3edc33.jpg#513525709958517ab0040cccea3edc33"
+      "https://lastfm.freetls.fastly.net/i/u/770x0/9bf8a999a2184faea48d54175b495b0a.jpg#9bf8a999a2184faea48d54175b495b0a"
   },
 
   {
@@ -154,7 +154,7 @@ window.songs = [
     url: "https://www.youtube.com/watch?v=H2EW40tSYCA",
     explicit: false,
     imageUrl:
-      "https://lastfm.freetls.fastly.net/i/u/770x0/513525709958517ab0040cccea3edc33.jpg#513525709958517ab0040cccea3edc33"
+      "https://lastfm.freetls.fastly.net/i/u/770x0/9bf8a999a2184faea48d54175b495b0a.jpg#9bf8a999a2184faea48d54175b495b0a"
   },
 
   {
